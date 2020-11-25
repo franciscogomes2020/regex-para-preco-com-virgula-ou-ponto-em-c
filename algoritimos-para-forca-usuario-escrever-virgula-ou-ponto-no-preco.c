@@ -122,6 +122,9 @@ int match_patterns(char *pch,char *pattern)
 */
 
 
+#include<stdio.h>
+
+
 double pedirPreco()
 {
     // criar ponteiro não nulo para usar no input
