@@ -1,37 +1,37 @@
-Projeto didatíco
+#Projeto didatíco
 
-Como força o usuário digitar um ponto ou uma virgula em c
+##Como força o usuário digitar um ponto ou uma virgula em c
 
-Usando uma expressão regular (regex) eu posso escolher uma string com o formato exato que eu quero
+###Usando uma expressão regular (regex) eu posso escolher uma string com o formato exato que eu quero
 
-Expressão Regular para preços:
+####Expressão Regular para preços:
 
-"(\\+|-)?([[:digit:]]+)?(\\.|,)[[:digit:]][[:digit:]]"
+> "(\\+|-)?([[:digit:]]+)?(\\.|,)[[:digit:]][[:digit:]]"
 
-Resultado da regex para :
+#####Resultado da regex para :
 
-1234567.89
-234567.89
-34567.89
-4567.89
-567.89
-67.89
-7.89
-.89
+- 1234567.89
+- 234567.89
+- 34567.89
+- 4567.89
+- 567.89
+- 67.89
+- 7.89
+- .89
 
-A regex configurada para aceitar virgulas no lugar de ponto também:
+#####A regex configurada para aceitar virgulas no lugar de ponto também:
 
 
-1234567,89
-234567,89
-34567,89
-4567,89
-567,89
-67,89
-7,89
-,89
+- 1234567,89
+- 234567,89
+- 34567,89
+- 4567,89
+- 567,89
+- 67,89
+- 7,89
+- ,89
 
-Regex com dois dígitos depois da virgula obrigatório
+#####Regex com dois dígitos depois da virgula obrigatório
 
 Em c eu não consegui usar a ancora antes da regex para selecionar a string mas acabei encontrando um algoritmo no stackoverflow que me permitia produzir o mesmo efeito
 
