@@ -78,7 +78,7 @@ char * replace(
 
 
 
-int  match_patterns(char *pch,char *pattern)
+int match_patterns(char *pch,char *pattern)
 {
     regex_t             *regex;
     regmatch_t          *result;
@@ -110,9 +110,9 @@ int  match_patterns(char *pch,char *pattern)
     free(regex);
     if((result->rm_so == 0)&&(result->rm_eo == strlen(pch)))
     {
-        return 0; //OK
+        return 1; //OK
     }
-    return -1; //error
+    return 0; //error
 }
 
 
@@ -140,7 +140,7 @@ double pedirPreco()
         scanf("%s",input);
         
         // fazendo teste se bate com minha regex
-        if (match_patterns(input, regex)== 0){
+        if (match_patterns(input, regex)){
             
             // tudo certo só agradecer e ir embora
             printf("obrigado!\n");
