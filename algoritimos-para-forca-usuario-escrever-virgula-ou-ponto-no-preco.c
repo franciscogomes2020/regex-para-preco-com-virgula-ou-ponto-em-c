@@ -1,7 +1,18 @@
-/* daqui pra baixo é o codigo de replace do stackoverflow
+/* 
+ *  mapa do codigo: 
+ *
+ *	char * replace(char const * const,char const * const,char const * const)
+ * 	int    match_patterns(char *,char *) 
+ * 	double pedirPreco(void)
+ * 	int    main(void)
+*/
 
-https://stackoverflow.com/questions/779875/what-function-is-to-replace-a-substring-from-a-string-in-c
-
+/*
+ *  		
+ *  abaixo é o codigo de replace do stackoverflow
+ *
+ *  https://stackoverflow.com/questions/779875/what-function-is-to-replace-a-substring-from-a-string-in-c
+ *  
 */
 
 #include <string.h>
@@ -12,7 +23,6 @@ char * replace(
     char const * const original, 
     char const * const pattern, 
     char const * const replacement
-) {
 ) {
   size_t const replen = strlen(replacement);
   size_t const patlen = strlen(pattern);
@@ -56,10 +66,11 @@ char * replace(
 }
 
 
-/* daqui pra baixo é o codigo de de regex do stackoverflow
-
-https://stackoverflow.com/questions/14237772/suggest-c-regex-scanner-stream-reader
-
+/* 
+ *  abaixo é o codigo de de regex do stackoverflow
+ *
+ *  https://stackoverflow.com/questions/14237772/suggest-c-regex-scanner-stream-reader
+ *
 */
 
 #include<regex.h>
@@ -106,16 +117,10 @@ int  match_patterns(char *pch,char *pattern)
 
 
 /*
-
- daqui pra baixo é o codigo para  aceitar somente numeros que tenha o padrão de preço, podendo usar virgula também
-
+ * abaixo é o codigo para aceitar somente numeros que tenha o padrão de preço, podendo usar virgula também
+ *
 */
 
-/*
-
-função para pedir preço
-
-*/
 
 double pedirPreco()
 {
@@ -172,7 +177,9 @@ double pedirPreco()
 }
 
 /*
-    função  principal
+ * 
+ * função  principal
+ * 
 */
 int main(){
     printf("Quanto de troco?\n");
