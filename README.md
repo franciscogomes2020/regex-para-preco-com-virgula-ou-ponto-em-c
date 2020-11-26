@@ -1,4 +1,4 @@
-#Projeto didatíco#
+#Projeto didatíc
 
 ##Como força o usuário digitar um ponto ou uma virgula em c
 
@@ -40,5 +40,3 @@ Então a string só é aceita se tiver apenas números e uma virgula ou ponto, n
 No código em c a string é digitada pelo usuário e se aceita pela regex a string é convertida para double, para usar como preço dentro da aplicação
 
 Antes de fazer em c tinha feito em c++ com um código bem menor usando as bibliotecas já prontas da linguagem 
-
-se eu subir o código em c++ vou deixar os links aqui pra quem quiser conferir também 
